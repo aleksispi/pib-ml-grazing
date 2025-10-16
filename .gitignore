@@ -1,0 +1,8 @@
+*.png
+*.jpg
+*.nc
+*.npy
+*.pkl
+job_txts
+log
+__pycache__
