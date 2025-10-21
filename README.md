@@ -62,7 +62,12 @@ Mean Recall_no_activity_val              tot:    0.72414, ma:    0.72414, last: 
 ## Citation
 If you use this repository and/or find our paper useful, please cite the following:
 
-TODO: Add bib entry here.
+    @article{pirinen2025grazing,
+      title={Grazing Detection using Deep Learning and Sentinel-2 Time Series Data},
+      author={Pirinen, Aleksis and Yela, Delia Fano and Chakraborty, Smita and K{\"a}llman, Erik},
+      journal={arXiv preprint arXiv:2510.14493},
+      year={2025}
+    }
 
 ## License
 This project is released under the **MIT License**.  
