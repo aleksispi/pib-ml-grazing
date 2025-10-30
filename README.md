@@ -3,6 +3,10 @@
 
 Official code repository for the paper [Grazing Detection using Deep Learning and Sentinel-2 Time Series Data](https://arxiv.org/abs/2510.14493), summarizing the outcomes of a project conducted by [RISE Research Institutes of Sweden](https://www.ri.se/en) and the [Swedish Board of Agriculture (SBA)](https://jordbruksverket.se/languages/english/swedish-board-of-agriculture), with funding from the [Swedish National Space Agency (SNSA)](https://www.rymdstyrelsen.se/en/). Code mainly developed by [Aleksis Pirinen](https://aleksispi.github.io/) (RISE), with contributions from [Delia Fano Yela](https://delialia.github.io/) and [Smita Chakraborty](https://www.ri.se/en/person/smita-chakraborty) (both at RISE). [Erik Källman](https://www.ri.se/en/person/erik-kallman) (RISE) was the project leader. We thank the SBA, and [Niklas Boke Olen](https://scholar.google.com/citations?user=aUvgSgoAAAAJ&hl=en) in particular, for their valuable contributions, including key parts of the data used for this work.
 
+## NEWS
+* Our work will be presented at the [ELLIS UnConference Workshop - AI for Earth and Climate Sciences](https://www.ellis-jena.eu/ellis-unconference-2025/) in December 2025!
+
+
 ## Data
 The polygons and associated labels in this project were obtained from the SBA -- please contact their GIS department (Gis.Support@jordbruksverket.se) if you want to ask for access to their polygons and labels, including the ones we used in this project. However, satellite data can be freely downloaded from the [_Digital Earth Sweden_](https://digitalearth.se/) platform using scripts provided within this code repository, where you could of course specify regions of interest with polygons of your own.
 
