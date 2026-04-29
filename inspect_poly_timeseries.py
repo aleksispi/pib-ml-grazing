@@ -159,7 +159,14 @@ for file_idx in range(START_IDX, END_IDX):
     for t in range(T):
         # Perform prediction
         print("Processing image (%d, %d, %d)" % (file_idx, t, T))
-        img = (im_series[:, :, :, t] - 1000) / 10000  # -1k and then 10k division, done after Jan 2022
+		# IMPORTANT NOTE: The below normalization needs to be carefully considered on a case-by-case basis
+		# The -1000 subtraction part is not always applied to Post-Jan-2022 data -- it also depends on WHEN the data was downloaded e.g. from OpenEO!
+		# Check meta-data etc for the data you use to know the correct normalization.
+		# Thank you Isak Randahl and Linnea Sartorius for flagging this!
+		if False:
+        	img = (im_series[:, :, :, t] - 1000) / 10000  # -1k and then 10k division, done after Jan 2022
+		else:
+			img = im_series[:, :, :, t] / 10000
         pred_map, pred_map_binary_list, pred_map_binary_list_thin = mlp_inference(img, means, stds, models, H*W, config.THRESHOLD_THICKNESS_IS_CLOUD,
                                                                                   config.THRESHOLD_THICKNESS_IS_CLOUD, 1, DEVICE)
         pred_map_binary = pred_map_binary_list[0]
