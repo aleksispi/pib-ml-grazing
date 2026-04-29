@@ -6,6 +6,7 @@ Official code repository for the paper [Grazing Detection using Deep Learning an
 ## NEWS
 * Our work will be presented at the [ELLIS UnConference Workshop - AI for Earth and Climate Sciences](https://www.ellis-jena.eu/ellis-unconference-2025/) in December 2025!
 * Our work got accepted at [AICC: Workshop on AI for Climate and Conservation](https://sites.google.com/g.harvard.edu/aicceurips) at [EurIPS 2025](https://eurips.cc/)!
+* Code has been changed so that satellite data is not by default normalized as (img - 1000) / 10000 for post-Jan-2022 data, instead simply doing img / 10000 (see e.g. the file `inspect_poly_timeseries.py`). Thanks Isak Randahl and Linnea Sartorius for flagging this!
 
 ## Data
 The polygons and associated labels in this project were obtained from the SBA -- please contact their GIS department (Gis.Support@jordbruksverket.se) if you want to ask for access to their polygons and labels, including the ones we used in this project. However, satellite data can be freely downloaded from the [_Digital Earth Sweden_](https://digitalearth.se/) platform using scripts provided within this code repository, where you could of course specify regions of interest with polygons of your own.
