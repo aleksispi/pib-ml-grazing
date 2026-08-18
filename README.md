@@ -12,6 +12,12 @@ Official code repository for the paper [Grazing Detection using Deep Learning an
 ## Data
 The polygons and associated labels in this project were obtained from the SBA -- please contact their GIS department (Gis.Support@jordbruksverket.se) if you want to ask for access to their polygons and labels, including the ones we used in this project. However, satellite data can be freely downloaded from the [_Digital Earth Sweden_](https://digitalearth.se/) platform using scripts provided within this code repository, where you could of course specify regions of interest with polygons of your own.
 
+## Model weights
+Pre-trained ML models that give ~80\% accuracy can be [downloaded here](https://drive.google.com/file/d/1AG__4BXAM8y4iK9E3AFw36V8EfpTkhyo/view?usp=sharing) (extract and put into the `log` folder in the repository).
+
+## Earlier projects and models
+* Code, models and data for the cloud detection pipeline used in this work is available [here](https://github.com/aleksispi/ml-cloud-opt-thick). The paper describing the pipeline is available [here](https://www.mdpi.com/2072-4292/16/4/694). 
+
 ## Setup
 First, clone this repo. Then, see the included `requirements.txt` file for all Python packages used on a fresh Ubuntu 24.04.2 machine that is equipped with a modern Nvidia-5090 GPU (install the packages in the requirements file with the command: `pip install -r requirements.txt`). Note that you might want and have to change the torch-versions in the requirements file if you have another (older) GPU, or if you don't intend to use a GPU at all. **Tip:** It might be a good idea to first set up a virtual environment on your machine, prior to installing packages from `requirements.txt`.
 
